@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Ramadhani Ardiansah - Portofolio Web Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <h1 class="logo">Muhammad Ramadhani Ardiansah</h1>
+            <ul class="nav-links">
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#skills">Keahlian</a></li>
+                <li><a href="#portfolio">Portofolio</a></li>
+                <li><a href="#contact">Kontak</a></li>
+                <li class="toggle-btn" id="darkModeToggle"><i class="fas fa-moon"></i></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <img src="ddn.png" alt="Foto Profil" class="hero-image">
+                <h2 class="hero-title">Halo, Saya <span class="highlight">Muhammad Ramadhani Ardiansah</span></h2>
+                <p class="hero-subtitle">Seorang <span class="highlight">Mahasiswa</span></p>
+                <a href="#portfolio" class="cta-button">Lihat Portofolio Saya</a>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2 class="section-title">Tentang Saya</h2>
+                <p class="about-text">
+                    Saya adalah seorang mahasiswa aktif 25 yang sekarang sedang menjalani pendidikan di Universitas Muhamadiah Surakarta. Saya berada di fakultas Teknik dengan Prodi Teknik Elektro
+                </p>
+            </div>
+        </section>
+
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <h2 class="section-title">Keahlian Saya</h2>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <i class="fab fa-html5"></i>
+                        <span>HTML5</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-css3-alt"></i>
+                        <span>CSS3</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-js-square"></i>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-react"></i>
+                        <span>React</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-node-js"></i>
+                        <span>Node.js</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-git-alt"></i>
+                        <span>Git</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio-section">
+            <div class="container">
+                <h2 class="section-title">Portofolio</h2>
+                <div class="portfolio-grid">
+                    <a href="#" class="portfolio-item">
+                        <img src="https://via.placeholder.com/300" alt="Proyek 1">
+                        <div class="overlay">
+                            <h3>Proyek 1</h3>
+                            <p>Deskripsi singkat proyek ini.</p>
+                        </div>
+                    </a>
+                    <a href="#" class="portfolio-item">
+                        <img src="https://via.placeholder.com/300" alt="Proyek 2">
+                        <div class="overlay">
+                            <h3>Proyek 2</h3>
+                            <p>Deskripsi singkat proyek ini.</p>
+                        </div>
+                    </a>
+                    <a href="#" class="portfolio-item">
+                        <img src="https://via.placeholder.com/300" alt="Proyek 3">
+                        <div class="overlay">
+                            <h3>Proyek 3</h3>
+                            <p>Deskripsi singkat proyek ini.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2 class="section-title">Hubungi Saya</h2>
+                <div class="contact-links">
+                    <a href="dandintamvan604@gmail.com" class="contact-link"><i class="fas fa-envelope"></i> dandintamvan@gmail.com</a>
+                    <a href="www.linkedin.com/in/muhammad-ramadhani-ardiansah-0b5736386" target="_blank" class="contact-link"><i class="fab fa-linkedin"></i> Muhammad Ramadhani Ardiansah</a>
+                    <a href="https://github.com/nama-anda" target="_blank" class="contact-link"><i class="fab fa-github"></i> GitHub</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Muhammad Ramadhani Ardiansah.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <style>
+        :root {
+    --primary-color: #5d5dff;
+    --secondary-color: #212130;
+    --text-color: #f0f0f0;
+    --background-color: #121212;
+    --card-bg: #1e1e1e;
+}
+
+[data-theme="light"] {
+    --primary-color: #4a90e2;
+    --secondary-color: #e9eef5;
+    --text-color: #333;
+    --background-color: #f0f2f5;
+    --card-bg: #ffffff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 0;
+    transition: background-color 0.3s ease;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* --- Header & Navbar --- */
+.header {
+    background-color: var(--card-bg);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+.toggle-btn {
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.toggle-btn:hover {
+    color: var(--primary-color);
+}
+
+/* --- Sections & Titles --- */
+section {
+    padding: 80px 0;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 50px;
+    color: var(--primary-color);
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: var(--primary-color);
+    margin: 10px auto 0;
+}
+
+/* --- Hero Section --- */
+.hero-section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(135deg, var(--background-color), #2d2d3a);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.hero-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid var(--primary-color);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    color: #a0a0a0;
+}
+
+.highlight {
+    color: var(--primary-color);
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: var(--primary-color);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    margin-top: 30px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    transform: translateY(-5px);
+    background-color: #4a90e2;
+}
+
+/* --- About Section --- */
+.about-section, .skills-section, .portfolio-section, .contact-section {
+    background-color: var(--card-bg);
+    margin: 40px auto;
+    border-radius: 20px;
+    padding: 60px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    animation: slideInUp 1s ease-out;
+}
+
+.about-text {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.1rem;
+    color: #ccc;
+}
+
+/* --- Skills Section --- */
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skill-item {
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    flex: 1 1 120px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.skill-item:hover {
+    transform: scale(1.05);
+    background-color: var(--primary-color);
+    color: var(--background-color);
+}
+
+.skill-item i {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+/* --- Portfolio Section --- */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.portfolio-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-10px);
+}
+
+.portfolio-item img {
+    width: 100%;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.1);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.portfolio-item:hover .overlay {
+    opacity: 1;
+}
+
+/* --- Contact Section --- */
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.contact-link {
+    font-size: 1.1rem;
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-link i {
+    margin-right: 8px;
+}
+
+.contact-link:hover {
+    color: var(--primary-color);
+    transform: scale(1.1);
+}
+
+/* --- Footer --- */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--background-color);
+    color: #888;
+}
+
+/* --- Keyframe Animations --- */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+    </style>
+</head>
+<body>
+
+
+    <script>
+       document.addEventListener('DOMContentLoaded', function () {
+    const darkModeToggle = document.getElementById('darkModeToggle');
+    const body = document.body;
+
+    // Cek preferensi tema dari local storage atau sistem
+    const currentTheme = localStorage.getItem('theme');
+    if (currentTheme) {
+        body.setAttribute('data-theme', currentTheme);
+    }
+
+    darkModeToggle.addEventListener('click', function () {
+        if (body.getAttribute('data-theme') === 'light') {
+            body.setAttribute('data-theme', 'dark');
+            localStorage.setItem('theme', 'dark');
+            darkModeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+        } else {
+            body.setAttribute('data-theme', 'light');
+            localStorage.setItem('theme', 'light');
+            darkModeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+        }
+    });
+
+    // Perbarui ikon saat halaman dimuat
+    if (body.getAttribute('data-theme') === 'light') {
+        darkModeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+    } else {
+        darkModeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+    }
+});
+    </script>
+
+</body>
+</html>
